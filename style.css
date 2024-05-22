@@ -1,0 +1,335 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.h1t {
+    font-family: 'Poetsen One', cursive;
+    font-size: 5em;
+    color: #8cf504; /* Dark green color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow */
+  }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 90px;
+}
+
+#about {
+    background: linear-gradient(to right, #09636e, #76d9f1);
+}
+
+
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.text {
+    flex: 1;
+}
+
+.par1{
+    font-size: 190%;
+}
+
+
+
+#projects{
+    background-color: #161313;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.projecttext{
+    
+    color: #d5eef1;
+
+}
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #dad5d5;
+    box-shadow: 5px 5px 34px #077c91;
+}
+
+.tile{
+    background-color: #e2dfdf;
+    padding: 1%;
+    border-radius: 5px;
+}
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+#probut{
+    background: linear-gradient(to right, #149ec0, #cdd8df);
+    padding: 3%;
+    border-radius: 9px;
+    margin: 3px;
+    box-shadow: 5px 5px 4px #072b3f;
+    }
+
+#probut:hover{
+    background: linear-gradient(to right, #c1e90e, #c708d8);
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+#skills{
+    background: linear-gradient(to right, #9e14c0, #cdd8df);
+}
+table{
+    background-color: #7cb3e6;
+    font-weight:300;
+}
+
+#contact{
+    background: linear-gradient(to right, #ecf7f4, #14d3e0);
+}
+/* Animation for "Send Message" button */
+#but2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  
+}
+#but2:hover {
+    background-color: #2d3af8; /* Darker Green */
+}
+
+button:hover {
+  background-color: #f0740f; /* Darker Green */
+}
+
+
+
+
+
+
+
+#contact-form {
+    width: 50%; /* Set width of form */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  #contact-form label,
+  #contact-form input,
+  #contact-form textarea {
+    display: block;
+    width: 100%; /* Make elements take full width of the form */
+    margin-bottom: 10px;
+  }
+
+  #contact-form textarea {
+    height: 100px;
+  }
+
+  /* Style for the popup image */
+  #popup-image {
+    display: none;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 35%;
+    height: 35%;
+    z-index: 1000; 
+    border-radius: 8px;
+    animation: popupAnimation 6s ease-in-out;
+    
+     
+  }
+
+  
+ 
+  
+  /* Class for the blur and dark overlay */
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  }
+
+  .aboutbt {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it an inline-block element */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor on hover */
+    margin-right: 10px; /* Margin between buttons */
+    margin-bottom: 10px; /* Margin between buttons and text */
+    border-radius: 5px; /* Rounded corners */
+    width: auto;
+}
+.aboutbt:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0%;
+        
+    }
+
+    .project-gallery {
+        flex-direction: column;
+        
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 0%;
+    }
+    #projects{
+        padding-left: 4%;
+        margin-bottom: 30x;
+    }
+
+    table {
+        width: 50%;
+    }
+    #contact-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* For screens between 769px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Add your styles for this range */
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1025px) {
+    /* Add your styles for larger screens */
+}
+
+/* For landscape orientation */
+@media (orientation: landscape) {
+    /* Add your styles for landscape orientation */
+}
+
+/* For portrait orientation */
+@media (orientation: portrait) {
+    /* Add your styles for portrait orientation */
+}
